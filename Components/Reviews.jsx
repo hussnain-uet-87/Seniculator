@@ -4,9 +4,7 @@ import reviews from '../Constants/reviews'
 
 const Reviews = () => {
   return (
-    <section
-      style={{ fontFamily: 'Poppins' }}
-      className='max-w-7xl mx-auto px-8 py-10 '
+    <section className='max-w-7xl mx-auto px-12 py-10 font-["Poppins"]'
     >
       <div className=''>
         <h2 className='text-2xl md:text-3xl font-bold text-center underline decoration-emerald-600'>

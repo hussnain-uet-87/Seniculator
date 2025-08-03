@@ -6,7 +6,7 @@ import handImage from "../src/assets/hand.png"
 
 const HowToUse = () => {
   return (
-    <section className='max-w-7xl mx-6 md:mx-12 border-b-2 border-b-gray-400 p-6 pb-16 mb-10' style={{fontFamily: 'Poppins'}}>
+    <section className='max-w-7xl mx-6 md:mx-12 border-b-2 border-b-gray-400 p-6 pb-16 mb-10 font-["Poppins"]' >
         <div className='flex items-center flex-col md:flex-row '>
             <div className='flex-1 items-center '>
                 <h2 className='text-xl md:text-3xl text-left max-w-[350px] font-bold'>3 Easy Steps To Calculate Your GPA</h2>
