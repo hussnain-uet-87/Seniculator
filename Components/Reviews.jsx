@@ -6,9 +6,9 @@ const Reviews = () => {
   return (
     <section
       style={{ fontFamily: 'Poppins' }}
-      className='max-w-7xl mx-auto px-4 py-10 border-b-2 border-b-gray-400'
+      className='max-w-7xl mx-auto px-8 py-10 '
     >
-      <div>
+      <div className=''>
         <h2 className='text-2xl md:text-3xl font-bold text-center underline decoration-emerald-600'>
           Testimonials
         </h2>
@@ -19,7 +19,7 @@ const Reviews = () => {
 
       <div
         style={{ fontFamily: 'Poppins' }}
-        className='flex flex-wrap justify-center gap-6 mt-10'
+        className='flex flex-wrap justify-center gap-6 mt-10 border-b-2 border-b-gray-400 w-full pb-16'
       >
         {reviews.map((rev, index) => (
           <div
