@@ -31,7 +31,7 @@ const Navbar = () => {
           )}
         </button>
         {/* desktop view */}
-        <div className="hidden md:flex space-x-6 items-center justify-end">
+        <div className="hidden tracking-wide md:flex space-x-6 items-center justify-end">
           {LINKS.map((link, index) => (
             <a
               key={index}
@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         {/* Mobile view */}
         {isOpen && (
-          <div className="md:hidden flex flex-col space-y-2 items-center mt-4 py-4 bg-neutral-50 border-t-1">
+          <div className="md:hidden flex flex-col space-y-2 tracking-wide items-center mt-4 py-4 bg-neutral-50 border-t-1">
             {LINKS.map((link, index) => (
               <a
                 key={index}

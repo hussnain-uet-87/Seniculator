@@ -2,7 +2,7 @@ import React from 'react'
 
 const Feature = () => {
   return (
-    <section className='max-w-7xl mx-auto mt-16 px-6 mb-10 ' >
+    <section id='features' className='max-w-7xl mx-auto mt-16 px-6 mb-10 ' >
         <div className='flex flex-col border-b-2 border-b-gray-400 pb-20  px-20 lg:flex-row lg:space-x-10 items-center'>
             <div className='flex-1 mb-6 md:mb-0' style={{fontFamily: 'Poppins , sans-serif'}}>
                 <h2 className='text-5xl mb-4'>We Built A Digital Experience</h2>
