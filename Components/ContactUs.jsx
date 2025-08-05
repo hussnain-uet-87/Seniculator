@@ -4,7 +4,7 @@ import contactSVG from "../src/assets/contactSVG.svg"
 
 const ContactUs = () => {
   return (
-    <section id='contact' className="max-w-6xl mx-auto px-6 py-12 font-poppins">
+    <section id='contact' className="max-w-6xl mx-auto px-6 py-12 scroll-mt-6 font-poppins">
       <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>
       <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden">
         
@@ -16,7 +16,7 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center space-x-4">
             <FaEnvelope className="text-blue-600" />
-            <p className="text-gray-700">seniculator@gmail.com</p>
+            <p className="text-gray-700">seniculatorapp@gmail.com</p>
           </div>
           <div className="flex items-center space-x-4">
             <FaGlobe className="text-blue-600" />
@@ -24,27 +24,31 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <form className="md:w-1/2 p-6 space-y-4 bg-white">
+        <form action='https://formspree.io/f/xrblyybk' method='POST' className="md:w-1/2 p-6 space-y-4 bg-white">
         <h2 className='text-2xl md:text-3xl'>Something to Ask ? Feel Free to Drop Your Message</h2>
           <div className="flex flex-col md:flex-row gap-4">
             <input
+            name='name'
               type="text"
               placeholder="Your Name"
               className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <input
               type="email"
+              name='email'
               placeholder="Your Email"
               className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
           <input
             type="text"
+            name='subject'
             placeholder="Subject (optional)"
             className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <textarea
             rows="5"
+            name='message'
             placeholder="Your Message"
             className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           ></textarea>

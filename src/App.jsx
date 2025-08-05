@@ -9,7 +9,7 @@ import Footer from '../Components/Footer'
 import ContactUs from '../Components/ContactUs'
 const App = () => {
   return (
-    <>
+    <div className='scroll-smooth'>
       <Navbar/>
       <Hero/>
       <Feature/>
@@ -18,7 +18,7 @@ const App = () => {
       <Faqs/>
       <ContactUs/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

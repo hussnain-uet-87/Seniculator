@@ -8,7 +8,7 @@ const Faqs = () => {
     setOpenIndex(index === openIndex ? null : index);
   };
   return (
-    <section id="faqs" className="max-w-7xl mx-auto px-10 py-2">
+    <section id="faqs" className="scroll-mt-14 max-w-7xl mx-auto px-10 py-2">
       <h2 className="text-2xl md:text-3xl text-center font-bold mb-6 underline">FAQs</h2>
       <div className="flex flex-col md:flex-row w-full items-center justify-center gap-4 pb-6 border-b-2 border-b-gray-400">
         <div className="max-w-xl md:max-w-md space-y-4 ">

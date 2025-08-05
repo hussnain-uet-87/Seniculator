@@ -36,7 +36,7 @@ const Navbar = () => {
             <a
               key={index}
               href={link.link}
-              className="uppercase font-medium text-sm"
+              className="uppercase font-medium text-sm hover:border-b-2 hover:border-b-gray-600"
             >
               {link.name}
             </a>
