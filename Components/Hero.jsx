@@ -3,6 +3,7 @@ import hero2 from "../src/assets/hero-img-2.png";
 const Hero = () => {
   return (
     <section id="home" className="max-w-7xl p-6  mx-auto bg-[#fbfbfb]">
+      <p className="text-sm bg-amber-300 px-4 py-2 rounded-xl fixed">- Work In Progress</p>
       <div className="flex border-b-2 border-b-gray-400 flex-col md:mt-20 xl:mt-0 flex-col-reverse items-center md:flex-row ">
         <div className="lg:ml-22  md:ml-10 ml-6">
           <h2 className="font-[Poppins] text-[#94402c] text-2xl md:text-3xl mt-6 lg:text-5xl font-bold">
