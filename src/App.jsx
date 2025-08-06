@@ -7,6 +7,7 @@ import Reviews from '../Components/Reviews'
 import Faqs from '../Components/Faqs'
 import Footer from '../Components/Footer'
 import ContactUs from '../Components/ContactUs'
+import GpaCalculator from "../Components/GpaCalculator"
 const App = () => {
   return (
     <div className='scroll-smooth'>
@@ -14,6 +15,7 @@ const App = () => {
       <Hero/>
       <Feature/>
       <HowToUse/>
+      <GpaCalculator/>
       <Reviews/>
       <Faqs/>
       <ContactUs/>

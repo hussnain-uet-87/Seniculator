@@ -1,15 +1,28 @@
-import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaGlobe } from 'react-icons/fa';
-import contactSVG from "../src/assets/contactSVG.svg"
+import React, { useState } from "react";
+import { FaPhoneAlt, FaEnvelope, FaGlobe } from "react-icons/fa";
+import contactSVG from "../src/assets/contactSVG.svg";
 
 const ContactUs = () => {
+  const [fname, setFname] = useState("");
+  const [femail, setFemail] = useState("");
+  const [fsuject, setFsuject] = useState("");
+  const [fmessage, setFmessage] = useState("");
+  const submitHandle = () => {
+    setFname("");
+    setFemail("");
+    setFsuject("");
+    setFmessage("");
+  };
+
   return (
-    <section id='contact' className="max-w-6xl mx-auto px-6 py-12 scroll-mt-6 font-poppins">
+    <section
+      id="contact"
+      className="max-w-6xl mx-auto px-6 py-12 scroll-mt-6 font-poppins"
+    >
       <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>
       <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden">
-        
         <div className="md:w-1/2 bg-gray-100 p-6 flex flex-col justify-center space-y-6">
-        <img src={contactSVG} alt="" />
+          <img src={contactSVG} alt="" />
           <div className="flex items-center space-x-4">
             <FaPhoneAlt className="text-blue-600" />
             <p className="text-gray-700">+92 300 1234567</p>
@@ -24,31 +37,77 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <form action='https://formspree.io/f/xrblyybk' method='POST' className="md:w-1/2 p-6 space-y-4 bg-white">
-        <h2 className='text-2xl md:text-3xl'>Something to Ask ? Feel Free to Drop Your Message</h2>
+        <form
+          action="https://formspree.io/f/xrblyybk"
+          method="POST"
+          className="md:w-1/2 p-6 space-y-4 bg-white"
+          onSubmit={async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+
+            try {
+              const res = await fetch("https://formspree.io/f/xrblyybk", {
+                method: "POST",
+                body: formData,
+                headers: {
+                  Accept: "application/json",
+                },
+              });
+              if (res.ok) {
+                alert("Message sent successfully!");
+                submitHandle();
+              } else {
+                alert("Something went wrong. Please try again.");
+              }
+            } catch (error) {
+              alert("An error occurred. Please try again later.");
+              console.error(error);
+            }
+          }}
+        >
+          <h2 className="text-2xl md:text-3xl">
+            Something to Ask ? Feel Free to Drop Your Message
+          </h2>
           <div className="flex flex-col md:flex-row gap-4">
             <input
-            name='name'
+              name="name"
               type="text"
               placeholder="Your Name"
+              value={fname}
+              onChange={(e) => {
+                setFname(e.target.value);
+              }}
               className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <input
               type="email"
-              name='email'
+              name="email"
+              value={femail}
+              onChange={(e) => {
+                setFemail(e.target.value);
+              }}
               placeholder="Your Email"
               className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
           <input
             type="text"
-            name='subject'
+            name="subject"
+            value={fsuject}
+            onChange={(e) => {
+              setFsuject(e.target.value);
+            }}
             placeholder="Subject (optional)"
             className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <textarea
             rows="5"
-            name='message'
+            name="message"
+            value={fmessage}
+            onChange={(e) => {
+              setFmessage(e.target.value);
+            }}
             placeholder="Your Message"
             className="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           ></textarea>
