@@ -91,4 +91,5 @@ Feel free to contribute or fork the project.
 ```
 
 > Thank you for checking out the Seniculator - GPA Calculator!  
- If you find it helpful, share it with friends or [connect with me on LinkedIn]((https://www.linkedin.com/in/hafiz-husnain-arif-00820a365/)) to see more of my work.
+> If you find it helpful, share it with friends or [connect with me on LinkedIn](https://www.linkedin.com/in/hafiz-husnain-arif-00820a365/) to see more of my work.
+
