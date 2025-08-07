@@ -56,30 +56,38 @@ To run this project locally:
     (or as specified in your terminal) to view the app.
 
 ## 📁 Folder Structure
-   ```bash
-     src/
-       │
-       ├── assets/              # Static assets (SVGs, images)
-       ├── components/          # All React components including full pages (Home, Calculator, Contact, etc.)
-       ├── App.jsx              # Main app wrapper with routing
-       ├── index.css            # Tailwind setup and global styles
-       └── main.jsx             # React root
+
+```bash
+src/
+├── assets/              # Static assets (SVGs, images)
+├── components/          # All React components including full pages (Home, Calculator, Contact, etc.)
+├── App.jsx              # Main app wrapper with routing
+├── index.css            # Tailwind setup and global styles
+└── main.jsx             # React root
+```
 
 ## 📮 Contact Form (Formspree)
-   ```bash
-     The contact form is directly connected to Formspree. You can:
-     Enter your name, email, and message
-     Submit the form to send feedback directly to the developer
-     No login or database is used - lightweight and fast solution for feedback!
+
+```bash
+The contact form is directly connected to Formspree. You can:
+- Enter your name, email, and message
+- Submit the form to send feedback directly to the developer
+- No login or database is used — lightweight and fast solution for feedback!
+```
 
 ## 🧑 Author
-   ```bash
-      Hafiz Hussnain Arif
-      GitHub: @hussnain-uet-87
+
+```bash
+Hafiz Hussnain Arif
+GitHub: @hussnain-uet-87
+```
 
 ## 📄 License
-   ```bash
-      This project is open for use and sharing. No license applied.
-      Feel free to contribute or fork the project.
 
-> Thank you for checking out the GPA Calculator! If you find it helpful, share it with friends or [connect with me on LinkedIn](https://www.linkedin.com/in/hussnain-uet-87) to see more of my work.
+```bash
+This project is open for use and sharing. No license applied.
+Feel free to contribute or fork the project.
+```
+
+> Thank you for checking out the Seniculator - GPA Calculator!  
+> If you find it helpful, share it with friends or [connect with me on LinkedIn](https://www.linkedin.com/in/hussnain-uet-87) to see more of my work.
