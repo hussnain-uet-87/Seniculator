@@ -19,7 +19,7 @@ const GpaCalculator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200 py-10 px-4 pt-16">
+    <div className="min-h-screen mb-10 border-b-2 border-b-gray-500 bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200 py-10 px-4 pt-16">
       <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-8">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-3">
           GPA Calculator
@@ -37,13 +37,14 @@ const GpaCalculator = () => {
                 <th className="px-4 py-2">Grade</th>
               </tr>
             </thead>
-            <tbody>
+        <tbody>
   {subjects.map((subject, index) => (
     <tr
       key={index}
       className="bg-gray-100 group transition-all rounded-xl text-sm md:text-base"
     >
-      <td className="px-2 md:px-4 py-2">
+      {/* Subject Name */}
+      <td className="px-2 md:px-4 py-2 w-[50%] md:w-auto">
         <input
           type="text"
           placeholder="e.g. Math"
@@ -52,7 +53,9 @@ const GpaCalculator = () => {
           className="w-full px-2 py-2 md:px-3 rounded-lg border border-gray-300 text-gray-700 group-hover:border-gray-700 group-hover:text-black focus:ring-2 focus:ring-blue-400 focus:outline-none"
         />
       </td>
-      <td className="px-2 md:px-4 py-2">
+
+      {/* Credit Hours */}
+      <td className="px-2 md:px-4 py-2 w-[25%] md:w-auto">
         <input
           type="number"
           placeholder="e.g. 3"
@@ -62,13 +65,17 @@ const GpaCalculator = () => {
           className="w-full px-2 py-2 md:px-3 rounded-lg border border-gray-300 text-gray-700 group-hover:border-gray-700 group-hover:text-black focus:ring-2 focus:ring-blue-400 focus:outline-none"
         />
       </td>
-      <td className="px-2 md:px-4 py-2">
+
+      {/* Grade Dropdown */}
+      <td className="px-2 md:px-4 py-2 w-[25%] md:w-auto">
         <select
           value={subject.grade}
           onChange={(e) => updateSubject(index, "grade", e.target.value)}
-          className="w-full px-2 py-2 md:px-3 rounded-lg border border-gray-300 text-gray-700 bg-white group-hover:border-gray-700 group-hover:text-black focus:ring-2 focus:ring-blue-400 focus:outline-none text-sm md:text-base min-w-[110px]"
+          className="w-full px-2 py-2 md:px-3 rounded-lg border border-gray-300 text-gray-700 bg-white group-hover:border-gray-700 group-hover:text-black focus:ring-2 focus:ring-blue-400 focus:outline-none text-sm md:text-base min-w-[60px] md:min-w-[110px]"
         >
-          <option value="">Select Grade</option>
+          <option value="" disabled hidden>
+            {window.innerWidth >= 768 ? "Select Grade" : ""}
+          </option>
           <option value="A+">A+</option>
           <option value="A">A</option>
           <option value="A-">A-</option>
