@@ -43,23 +43,30 @@ To run this project locally:
    ```bash
    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
    cd YOUR_REPO_NAME
-2.b**Install dependencies**
-  npm install
-3. **Start the development server**
-  npm run dev
-4.Visit http://localhost:5173 (or as specified in your terminal) to view the app.
+2. **Install dependencies**  
+   ```bash
+   npm install
+
+3. **Start the Development Server**  
+   ```bash
+   npm run dev
+
+4. **Visit http://localhost:5173**
+    ```bash
+    (or as specified in your terminal) to view the app.
 
 ## 📁 Folder Structure
-  src/
-    │
-    ├── assets/              # Static assets (SVGs, images)
-    ├── components/          # All React components including full pages (Home, Calculator, Contact, etc.)
-    ├── App.jsx              # Main app wrapper with routing
-    ├── index.css            # Tailwind setup and global styles
-    └── main.jsx             # React root
+      ```bash
+     src/
+       │
+       ├── assets/              # Static assets (SVGs, images)
+       ├── components/          # All React components including full pages (Home, Calculator, Contact, etc.)
+       ├── App.jsx              # Main app wrapper with routing
+       ├── index.css            # Tailwind setup and global styles
+       └── main.jsx             # React root
 
 ## 📮 Contact Form (Formspree)
-
+   ```bash
   The contact form is directly connected to Formspree. You can:
   Enter your name, email, and message
   Submit the form to send feedback directly to the developer
