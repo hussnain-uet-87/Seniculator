@@ -59,9 +59,8 @@ const GpaCalculator = () => {
     }
   };
   return (
-    <div
-      className="min-h-screen mb-10 borde
-    r-b-2 border-b-gray-500 bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200 py-10 px-4 pt-16"
+    <section id="calculator"
+      className="min-h-screen mb-10 border-b-2 -scroll-mt-14 border-b-gray-500 bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200 py-10 px-4 pt-16"
     >
       <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-8">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-3">
@@ -163,12 +162,12 @@ const GpaCalculator = () => {
           </button>
           {gpa !== null && (
             <p className="mt-4 text-center text-md  md:text-lg font-bold text-green-700">
-              Your GPA is : {gpa}
+             {gpa ==="Invalid input"?"Invalid input" : `Your GPA is ${gpa}`}
             </p>
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

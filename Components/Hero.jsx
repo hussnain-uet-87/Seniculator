@@ -40,6 +40,9 @@ const Hero = () => {
           </div>
 
           <button
+          onClick={() => {
+    document.getElementById("calculator")?.scrollIntoView({ behavior: "smooth" });
+  }}
             style={{ fontFamily: "Poppins", color: "#4a3222" }}
             className="tracking-wide b-10 flex items-center gap-2 cursor-pointer font-bold px-8 py-3 bg-amber-200 border-amber-300 border-2 mt-5 rounded-full text-md mb-8"
           >
