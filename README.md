@@ -43,9 +43,9 @@ To run this project locally:
    ```bash
    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
    cd YOUR_REPO_NAME
-2.**Install dependencies**
+2.b**Install dependencies**
   npm install
-3.**Start the development server**
+3. **Start the development server**
   npm run dev
 4.Visit http://localhost:5173 (or as specified in your terminal) to view the app.
 
