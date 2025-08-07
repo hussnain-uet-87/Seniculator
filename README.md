@@ -66,18 +66,20 @@ To run this project locally:
        └── main.jsx             # React root
 
 ## 📮 Contact Form (Formspree)
-   ```bash
-  The contact form is directly connected to Formspree. You can:
-  Enter your name, email, and message
-  Submit the form to send feedback directly to the developer
-  No login or database is used - lightweight and fast solution for feedback!
+      ```bash
+     The contact form is directly connected to Formspree. You can:
+     Enter your name, email, and message
+     Submit the form to send feedback directly to the developer
+     No login or database is used - lightweight and fast solution for feedback!
 
 ## 🧑 Author
-Hafiz Hussnain Arif
-GitHub: @hussnain-uet-87
+      ```bash
+      Hafiz Hussnain Arif
+      GitHub: @hussnain-uet-87
 
 ## 📄 License
-This project is open for use and sharing. No license applied.
-Feel free to contribute or fork the project.
+      ```bash
+      This project is open for use and sharing. No license applied.
+      Feel free to contribute or fork the project.
 
-> Thank you for checking out the Seniculator! If you find it helpful, share it with friends or [connect with me on LinkedIn](> Thank you for checking out the GPA Calculator! If you find it helpful, share it with friends or [connect with me on LinkedIn](https://www.linkedin.com/in/hussnain-uet-87) to see more of my work.
+> Thank you for checking out the GPA Calculator! If you find it helpful, share it with friends or [connect with me on LinkedIn](https://www.linkedin.com/in/hussnain-uet-87) to see more of my work.
