@@ -56,7 +56,7 @@ To run this project locally:
     (or as specified in your terminal) to view the app.
 
 ## 📁 Folder Structure
-      ```bash
+   ```bash
      src/
        │
        ├── assets/              # Static assets (SVGs, images)
@@ -66,19 +66,19 @@ To run this project locally:
        └── main.jsx             # React root
 
 ## 📮 Contact Form (Formspree)
-      ```bash
+   ```bash
      The contact form is directly connected to Formspree. You can:
      Enter your name, email, and message
      Submit the form to send feedback directly to the developer
      No login or database is used - lightweight and fast solution for feedback!
 
 ## 🧑 Author
-      ```bash
+   ```bash
       Hafiz Hussnain Arif
       GitHub: @hussnain-uet-87
 
 ## 📄 License
-      ```bash
+   ```bash
       This project is open for use and sharing. No license applied.
       Feel free to contribute or fork the project.
 
