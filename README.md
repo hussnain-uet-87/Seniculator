@@ -20,7 +20,8 @@ Live Website: [seniculator.vercel.app](https://seniculator.vercel.app/)
 
 ## 🔗 Live Demo
 
-👉 [Watch Full Demo (LinkedIn Post)]([PUT_YOUR_LINK_HERE](https://www.linkedin.com/posts/hafiz-husnain-arif-00820a365_reactjs-tailwindcss-webdevelopment-activity-7359292651789074432-uPje?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFqfK4gBLTXQg6J857wVlS7NK6Qnz02Q3Vk))
+👉 [Watch Full Demo (LinkedIn Post)](https://www.linkedin.com/posts/hafiz-husnain-arif-00820a365_reactjs-tailwindcss-webdevelopment-activity-7359292651789074432-uPje?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFqfK4gBLTXQg6J857wVlS7NK6Qnz02Q3Vk)
+
 
 _(A 50-second walkthrough showing UI, subject input, and GPA output will be available on my LinkedIn post.)_
 
@@ -90,4 +91,4 @@ Feel free to contribute or fork the project.
 ```
 
 > Thank you for checking out the Seniculator - GPA Calculator!  
-> If you find it helpful, share it with friends or [connect with me on LinkedIn](https://www.linkedin.com/in/hussnain-uet-87) to see more of my work.
+> If you find it helpful, share it with friends or [connect with me on LinkedIn]((https://www.linkedin.com/in/hafiz-husnain-arif-00820a365/)) to see more of my work.
