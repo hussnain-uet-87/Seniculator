@@ -3,7 +3,7 @@
 
 A fully responsive GPA calculator web app built with **React** and **Tailwind CSS**, designed to solve a real-world problem — quickly and accurately calculate your GPA using real user data without needing to log in. Built to be fast, clean, and efficient for students who want results with zero friction.
 
-Live Website: [seniculator.vercel.app](https://www.seniculator.vercel.app)
+Live Website: [seniculator.vercel.app](https://seniculator.vercel.app/)
 
 ---
 
